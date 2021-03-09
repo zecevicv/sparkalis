@@ -888,6 +888,7 @@ h6 {
   .focus ul li img {
     height: auto;
     width: 16vw;
+    flex: 0 0 16vw;
     margin-bottom: 0;
     margin-right: 5vw;
   }
@@ -1108,7 +1109,7 @@ h6 {
   line-height: 1.3;
 }
 
-.story h4 {
+.story h3 {
   text-align: right;
   margin-right: 2.6vw;
 }
@@ -1140,7 +1141,7 @@ h6 {
     margin-bottom: 4vw;
   }
 
-  .story h4 {
+  .story h3 {
     text-align: left;
     margin-right: 0;
   }
