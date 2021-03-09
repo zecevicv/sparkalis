@@ -17,3 +17,12 @@ if (window.innerWidth < 1024) {
     headerLinks.style.display = 'flex';
   }, 250);
 }
+
+/* #AOS Animations
+    ======================================================= */
+AOS.init({
+  startEvent: 'load',
+  once: true,
+  duration: 800,
+  offset: 300,
+});
