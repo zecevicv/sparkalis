@@ -1,6 +1,3 @@
-/* #Font
-================================================== */
-
 /* #Variables
 ================================================== */
 :root {
@@ -18,7 +15,7 @@ body {
   max-width: 100%;
 
   /* Padding for Header */
-  padding-top: 3.65vw;
+  padding-top: 5.2vw;
 }
 
 @media (max-width: 1023.98px) {
@@ -280,7 +277,7 @@ h6 {
 ================================================== */
 .header {
   background-color: var(--sparkalis-gray);
-  padding: 1.4vw 0;
+  padding: 1vw 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -292,6 +289,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row-reverse;
   max-width: 95%;
 }
 
@@ -321,17 +319,25 @@ h6 {
   border-bottom: 1px solid var(--sparkalis-green);
 }
 
+.header-logo {
+  width: 13vw;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
 @media (max-width: 1023.98px) {
   .header {
     padding: 2.9vw 0;
   }
 
-  .header-logo {
-    width: 40vw;
+  .header .container {
+    flex-direction: row;
   }
 
-  .header-logo img {
-    width: 100%;
+  .header-logo {
+    width: 40vw;
   }
 
   .header-links {
@@ -559,6 +565,7 @@ h6 {
 .about-logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 4.5vw;
   padding-right: 2vw;
 }

@@ -26,3 +26,27 @@ AOS.init({
   duration: 800,
   offset: 300,
 });
+
+/* #Header Links Scroll To
+    ======================================================= */
+const headerScrollLinks = document.querySelectorAll('.header-links a');
+
+headerScrollLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const scrollElement = document.querySelector(e.target.hash);
+
+    
+
+    if (window.innerWidth < 1024) {
+      hamburgerBtn.classList.remove('is-active');
+      header.classList.remove('show-menu');
+      body.classList.remove('no-scroll');
+
+      scrollElement.scrollIntoView({ behavior: 'smooth', block: 'start'});
+    } else {
+      scrollElement.scrollIntoView({ behavior: 'smooth', block: 'end'});
+    }
+  });
+});
