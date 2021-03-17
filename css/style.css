@@ -15,13 +15,13 @@ body {
   max-width: 100%;
 
   /* Padding for Header */
-  padding-top: 5.2vw;
+  padding-top: 5.1vw;
 }
 
 @media (max-width: 1023.98px) {
   body {
     /* Padding for Header */
-    padding-top: 15.7vw;
+    padding-top: 19.4vw;
   }
 }
 
@@ -320,7 +320,7 @@ h6 {
 }
 
 .header-logo {
-  width: 13vw;
+  width: 9.1vw;
 }
 
 .header-logo img {
